@@ -48,3 +48,31 @@ console.log( m < 2 || n > 7);
 console.log( !(m==4));
 
 //   TERNARY OPERATOR
+let age = 21;
+let value = (age>20) ? "Yes" : "No";
+// (condition)?value1:value2
+
+
+// NULLISH COALESCING OPERATOR
+let m = null;
+let n = "empty";
+let o = m??n;
+// ?? returns first argument if it is not nullish(null or undefined) otherwise second argument.
+
+// OPERATIONAL CHAINING OPERATOR
+// ?. returns undefined if an object is undefined or null(instead of throwing an error).
+const p = { value : 1 , color: "pink"};
+let q = p?.name;
+
+
+// ------------------------------------------------------ STRINGS
+
+let text1 = "20";
+let text2 = "10";
+console.log(text1<text2);
+console.log(text1, text2);
+console.log(text1+ " "+ text2);
+let text3 = "hello";
+text1 += text3;
+console.log(text1);
+

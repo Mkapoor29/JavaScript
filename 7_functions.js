@@ -41,7 +41,14 @@ function defPar(x , y = 2)
 let d = defPar(10);
 
 // ----------------------------FUNCTION REST PARAMETER---------------
-
+function sum(...args)
+{
+  let sum = 0;
+  for ( let x of args ) sum+=x;
+  return sum;
+}
+let x = sum(1,2,3,4,5,6,7,8,9,10);
+console.log(x);
 
 // ------------------------------------------------------------------------------------------------
 // function with return statement

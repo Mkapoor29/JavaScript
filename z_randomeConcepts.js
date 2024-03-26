@@ -7,3 +7,11 @@ console.log(arr instanceof Array);
 // TOSTRING() CAN CONVERT VALUE OF X OF THE BASE 10 NUMBER SYTEM, TO ITS COUNTERPART IN THE BASE Y NUMBER SYSTEM.
 // (10).toString(2); //1010  convert value of 10 in base10 system into 1010 in base2 system.
 // (10).toString(8); // 12
+
+
+// TRY AND CATCH BLOCKS ARE USED TO HANDLE ERRORS THROWN AT EXECUTION/RUN TIME. HENCE THEY CANNOT HANDLE SYNTAX ERRORS(COMPILE TIME ERRORS).
+try {
+console.log('hello)
+} catch(e) {
+console.log('caught')
+}

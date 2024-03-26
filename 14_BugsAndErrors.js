@@ -34,6 +34,10 @@ console.log('hello)
 console.log('caught')
 }
 // Uncaught SyntaxError: Invalid or unexpected token.
+// you cannot handle SyntaxErrors in JavaScript using a try catch block.  
+
+
+
 // ----------------------------------------------TYPE ERROR
 // "hello".pop();
 

@@ -14,6 +14,8 @@ var letters = 'abc';
 console.log(letters.match(/a/)); // returns an array [ 'a', index: 0, input: 'abc', groups: undefined ]
 console.log(letters.match(/d/)); // returns null
 
+var str = "Hello";
+console.log(str.match("jello"));
 
 // -------------------------------------------------UNDEFINED VALUE
 /*

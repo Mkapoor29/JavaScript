@@ -45,3 +45,11 @@ console.log('caught')
 (10).toString(2);
 (10).toString(8);
 (10).toString(100); // this will throw a range error because the base is out of range.
+
+
+try {
+  Number(5).toPrecision(300);
+} catch (e) {
+  console.log("There was an error:", e.message);
+}
+// There was an error: toPrecision() argument must be between 1 and 100

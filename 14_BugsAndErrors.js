@@ -28,7 +28,12 @@ console.log(add("2",3));
 // ----------------------------------------------SYNTAX ERROR
 
 // var a "hell world";
-
+try {
+console.log('hello)
+} catch(e) {
+console.log('caught')
+}
+// Uncaught SyntaxError: Invalid or unexpected token.
 // ----------------------------------------------TYPE ERROR
 // "hello".pop();
 

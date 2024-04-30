@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+    <script type="module" src="hello.js"></script>
+</body>
+</html>
+
+<!-- hello.js -->
+<!--
+import fun3, {fun1} from './hello2.js';
+import {fun2} from './hello2.js';
+// import {fun1, fun2} from './hello2.js';
+
+fun1('John');
+fun2('Doe');
+fun3();
+ -->
+
+<!-- hello2.js -->
+<!--
+// export function fun1(name)
+// {
+//     console.log("Hello, ", name);
+// }
+// export function fun2(name)
+// {
+//     console.log("Hi, ", name);
+// }
+// module.exports = {fun1, fun2};
+export const fun1 = (name) => {
+    console.log("Hello, ", name);
+}   
+export const fun2 = (name) => {
+    console.log("Hi, ", name);
+}
+const fun3 = () =>
+{
+    console.log("Hey");
+}
+export default fun3;
+ -->

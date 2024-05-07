@@ -15,3 +15,19 @@ console.log('hello)
 } catch(e) {
 console.log('caught')
 }
+
+
+
+// DIFFERENCE BETWEEN FOR-IN AND FOR-OF AND USING THEM ON OBJECTS.
+// 1) for - in statement iterartes a specified variable over all enumerable objects of an object.
+fun forIn(obj, objName)
+{
+  let result = "";
+  for (const i in obj)
+    {
+      result +=  `${objName}.${i} = ${obj[i]}<br>`;
+    }
+  result += "<hr>";
+  return result;
+}
+// for-in will return the name of user-defined properties in addition to numeric values

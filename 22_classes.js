@@ -104,3 +104,28 @@
 // train4.lightsStatus(); // Lights on? true
 // train4.getSelf(); // Train {color: 'red', lightsOn: true}
 // train4.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, getSelf: f, getPrototype: f}
+
+// INHERITANCE
+class HighSpeedTrain extends Train 
+    {
+        constructor(passengers, highSpeedOn,color, lightsOn)
+        {
+            super(color, lightsOn);
+            this.passengers = passengers;
+            this.highSpeedOn = highSpeedon;
+        }
+        toggleHighSpeed()
+        {
+            this.highSpeedOn = !this.highSpeedOn;
+            console.log('High speed status: ', this.highSpeedOn );
+        }
+        toggleLights()
+        {
+            super.toggleLights();
+            super.lightStatus();
+            console.log('Lights are 100% operational');
+        }
+    }
+
+// super keyword -> specify what property gets inherited from the super-class in the sub-class.
+// in addition to inherited properties, you will automatically inherit all methods that exist on Train prototype

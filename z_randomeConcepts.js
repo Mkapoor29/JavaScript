@@ -31,3 +31,20 @@ fun forIn(obj, objName)
   return result;
 }
 // for-in will return the name of user-defined properties in addition to numeric values
+
+
+// CREATING OBJECTS USING Object.create
+var bird = 
+{
+  hasWings: true,
+  canFly: true,
+  hasFeathers: true
+}
+var eagle1 = Object.create(bird);
+console,log("eagl1e: ", eagle1); // eagle1: {}
+
+console.log("eagle1 has wings: ", eagle1.haswimgs); // eagle1 has wings: true
+
+var penguin1 = Object.create(bird);
+penguin1.canFly = false;
+console.log("penguin1)

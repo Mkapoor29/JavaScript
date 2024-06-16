@@ -114,18 +114,61 @@ class HighSpeedTrain extends Train
             this.passengers = passengers;
             this.highSpeedOn = highSpeedon;
         }
+        // this is sub-class meethod
         toggleHighSpeed()
         {
             this.highSpeedOn = !this.highSpeedOn;
             console.log('High speed status: ', this.highSpeedOn );
         }
+        // if you want to implement a method of super-class differently from super-class
         toggleLights()
         {
-            super.toggleLights();
+            super.toggleLights(); //inherting super-class method
             super.lightStatus();
-            console.log('Lights are 100% operational');
+            console.log('Lights are 100% operational'); // change in inherirted class
         }
     }
 
 // super keyword -> specify what property gets inherited from the super-class in the sub-class.
 // in addition to inherited properties, you will automatically inherit all methods that exist on Train prototype
+var train5 = new Train('blue', false);
+var highspeed1 = new HighSpeedTrain(200, false, 'green', false);
+
+train5.toggleLights(); // undefined
+train5.lightStatus(); //Lights on? true
+highspeed1.toggleLights() // Lights on? true, lights are 100% operational.
+
+
+
+// ---------------------------------------------------------------------
+// USING CLASS INHERITANCE AS ANOTHER CLASS'S CONSTRUCTOR PROPERTY
+class StationaryBike
+{
+    constructor(position, gears)
+    {
+        this.position = position;
+        this.gears = gears;
+    }
+}
+class TreadMill
+{
+    constructor(position, modes)
+    {
+        this.position = position;
+        this.modes = modes;
+    }
+}
+class Gym
+{
+    constructor(openHrs, stationaryBikePos, treadMillPos)
+    {
+        this.openHrs = openHrs;
+        this.stationaryBike = new StationaryBike(stationaryBikePos, 8);
+        // stationaryBike property is an on object of StationaryBike type with two properties position and gears
+        this.treadMill = new Treadmill(treadMillPos, 5);
+    }
+}
+var boxingGym = new Gym ("7-11", "right corner", "left corner");
+console.log(boxingGym.openHrs);
+console.log(boxingGym.stationaryBike);
+console.log(boxingGym.treadMill);

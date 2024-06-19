@@ -47,4 +47,66 @@ console.log("eagle1 has wings: ", eagle1.haswimgs); // eagle1 has wings: true
 
 var penguin1 = Object.create(bird);
 penguin1.canFly = false;
-console.log("penguin1)
+console.log("penguin1);
+
+
+// class Cake {
+//   constructor(lyr) {
+//       this.layers = lyr + 1;
+//   }
+// }
+
+// var result = new Cake(1);
+// console.log(result.layers); // 2
+
+
+
+// // 
+// class Animal {
+//   constructor(lg) {
+//       this.legs = lg;
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor() {
+//       super(4);
+//   }
+// }
+
+// var result = new Dog();
+// console.log(result.legs); // 4
+
+
+
+
+// class Animal {
+
+// }
+
+// class Cat extends Animal {
+//   constructor() {
+//     super();
+//     this.noise = "meow";
+//   }
+// }
+
+// var result = new Animal();
+// console.log(result.noise); // undefined;
+
+
+
+// class Person {
+//   sayHello() {
+//       console.log("Hello");
+//   }
+// }
+
+// class Friend extends Person {
+//   sayHello() {
+//       console.log("Hey");
+//   }
+// }
+
+// var result = new Friend();
+// result.sayHello();
